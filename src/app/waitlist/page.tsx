@@ -55,7 +55,8 @@ const Waitlist = ({
           throw new Error();
         }
         onWaitlist("SHOW_THANKS");
-      } catch (e: any) {
+      } catch (e) {
+        console.log(e);
         onWaitlist("SHOW_ERROR");
       }
     })();
